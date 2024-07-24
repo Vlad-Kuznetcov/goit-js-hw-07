@@ -25,25 +25,13 @@ const images = [
   },
 ];
 
-// const gallery = document.querySelector("gallery");
-
-// const galleryItems = images
-//   .map(({ url, alt }) => {
-//     return `<li class="gallery-item">S
-//         <img src="${url}" alt="${alt}">
-//       </li>`;
-//   })
-//   .join("");
-
-// gallery.insertAdjacentHTML("beforeend", galleryItems);
-
 const gallery = document.querySelector(".gallery");
-const threeEl = images.slice(0, 3);
+const threeGalleryEl = images.slice(0, 3);
 
-const galleryItems = threeEl
+const galleryItems = threeGalleryEl
   .map(({ url, alt }) => {
-    return `<li class="gallery-item">
-        <img src="${url}" alt="${alt}" width="250">
+    return `      <li class="gallery-item">
+        <img src="${url}" alt="${alt}" width="250"/>
       </li>`;
   })
   .join("");
